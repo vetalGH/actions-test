@@ -7,7 +7,7 @@ import os
 # from constants import MONGO_URL
 
 
-client = pymongo.MongoClient(os.environ("SOME_SECRET"))
+client = pymongo.MongoClient(os.environ(["SOME_SECRET"]))
 db = client["my_db"]
 collection = db["users"]
 
