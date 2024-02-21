@@ -2,12 +2,11 @@ import pymongo
 import random
 import string
 import datetime
-import os
 
-# from constants import MONGO_URL
+from constants import MONGO_URL
 
 
-client = pymongo.MongoClient(os.environ(["SOME_SECRET"]))
+client = pymongo.MongoClient(MONGO_URL)
 db = client["my_db"]
 collection = db["users"]
 
