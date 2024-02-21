@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
-        uses: actions/checkout@v2.5.0 # updated version
+        uses: actions/checkout@v4 # updated version
 
       - name: setup python
-        uses: actions/setup-python@v4.5.0 # updated version
+        uses: actions/setup-python@v5 # updated version
         with:
           python-version: "3.11" # install the python version needed
 
